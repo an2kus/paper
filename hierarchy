@@ -1,0 +1,68 @@
+recordId
+/recordId
+clientInfo
+ name
+  lastName
+  /lastName
+  firstName
+  /firstName
+  middleName
+  /middleName
+ /name
+ dateOfBirth
+ /dateOfBirth
+ sex
+ /sex
+ document
+  code
+  /code
+  series
+  /series
+  number
+  /number
+  issueDate
+  /issueDate
+  issuedBy
+  /issuedBy
+  unitCode
+  /unitCode
+ /document
+ registrationAddress
+  addressText
+  /addressText
+ /registrationAddress
+ residenceAddress
+  addressText
+  /addressText
+ /residenceAddress
+/clientInfo
+universityInfo
+ universityCode
+ /universityCode
+ facultyCode
+ /facultyCode
+ facultyName
+ /facultyName
+ status
+  code
+  /code
+  date
+  /date
+ /status
+ startDate
+ /startDate
+ course
+ /course
+ educationType
+ /educationType
+ order
+  number
+  /number
+  date
+  /date
+  type
+  /type
+ /order
+ studentId
+ /studentId
+/universityInfo
