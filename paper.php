@@ -2,8 +2,8 @@
 
 error_reporting ( E_ERROR | E_WARNING | E_PARSE );
 
-$dir1 = "/home/an2k/www/er/sites/default/files" ; // для упаковки
-$dir2 = "../sites/default/files/" ; // для закачки
+$dir1 = "/home/user/www/paper" ; // для упаковки
+$dir2 = "./" ; // для закачки
 $filename = "list_students" ; // без расширения
 $hierarchy = "hierarchy" ;  // файл шаблона иерархии одной записи студента
 
