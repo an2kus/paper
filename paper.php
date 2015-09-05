@@ -1,4 +1,4 @@
-<?php // paper.php
+<?php // paper.php Project paper (c) Alex Nemch an2k@mail.ru
 
 error_reporting ( E_ERROR | E_WARNING | E_PARSE );
 
