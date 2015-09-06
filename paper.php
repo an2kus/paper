@@ -100,7 +100,7 @@ fclose ( $h ) ;
 <a href=<?php echo $dir2 . $filename . ".xml.rar" ?>><big><b>Готовый XML-файл</b></big></a><br><br>
 <a href=<?php echo $dir2 . $filename . ".csv.rar" ?>>Закачанный CSV-файл</a>&nbsp;&nbsp;&nbsp;
 <a href=<?php echo $dir2 . $hierarchy ?> target=_blank>Файл иерархии</a>&nbsp;&nbsp;&nbsp;
-<a href=<?php echo $dir2 . "all_paper.rar" ?>>Исходники проекта</a>
+<a href=https://github.com/an2kus/paper target=_blank>Исходники проекта</a>
 
 <td><tr>
 </table>
