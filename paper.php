@@ -7,6 +7,8 @@ $dir2 = "./" ; // для закачки
 $filename = "list_students" ; // без расширения
 $hierarchy = "hierarchy" ;  // файл шаблона иерархии одной записи студента
 
+$passw = "12345" ;
+
 ?>
 <html>
 <head>
@@ -34,7 +36,7 @@ if ( ! $key ) {
   exit() ;
 }
 
-if ( "paper1q2w3e" != $key ) die ( "<hr><hr><font color=red>Пароль неверный. Закройте браузер и начните все сначала.</font><hr><hr>" ) ;
+if ( $passw != $key ) die ( "<hr><hr><font color=red>Пароль неверный. Закройте браузер и начните все сначала.</font><hr><hr>" ) ;
 
 ?>
 
@@ -87,7 +89,7 @@ fclose ( $h ) ;
   echo "<font color=green><b>XML-файл готов</b>. Количество записей: <big>" . $GLOBALS["num_rec"] . "</big></font><hr><hr>" ;
 
   // для скачивания упаковать файлы xml и csv RAR`ом и записать это в лог
-  system ( "cd $dir1; echo '\n=====\n' >> paper.log; date >> paper.log; rar u $filename.csv.rar $filename.csv >> paper.log; rar u $filename.xml.rar $filename.xml >> paper.log" ) ;
+  system ( "cd $dir1; echo '\n===\n' >> paper.log; date >> paper.log; rar u $filename.csv.rar $filename.csv >> paper.log; rar u $filename.xml.rar $filename.xml >> paper.log" ) ;
 }
 
 ?>
@@ -103,7 +105,7 @@ fclose ( $h ) ;
 <td><tr>
 </table>
 
-Версия 1.1 beta, 2015 (c) <a target=_blank href=http://mgimo.ru>МГИМО</a>. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Разработка и техподдержка <a target=_blank href=http://nemchenko.ru>А.Немченко</a>
+Версия 1.2 beta, 2015 (c) <a target=_blank href=http://nemchenko.ru>А.Немченко</a>
 
 </center>
 </body>
