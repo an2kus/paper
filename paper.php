@@ -2,12 +2,12 @@
 
 error_reporting ( E_ERROR | E_WARNING | E_PARSE );
 
-$passw = "12345" ; // пароль для входа
-
-$dir1 = "/home/user/www/paper" ; // для упаковки
-$dir2 = "./" ; // для закачки
-$filename = "list_students" ; // без расширения
-$hierarchy = "hierarchy" ;  // файл шаблона иерархии одной записи студента
+$passw      = "12345" ;       // пароль для входа
+$cod_uniera = "777" ;         // код университета
+$dir1       = "/home/user/www/paper" ; // директорий для упаковки
+$dir2       = "./" ;                   // и для закачки
+$filename   = "list_students" ; // файл данных студентов (без расширения)
+$hierarchy  = "hierarchy" ;     // файл шаблона иерархии одной записи студента
 
 ?>
 <html>
@@ -42,7 +42,7 @@ if ( $passw != $key ) die ( "<hr><hr><font color=red>Пароль неверны
 
 <table align=center bgcolor=#dddccc cellpadding=20 cellspacing=0 border=0><tr><td align=center>
 
-<h2><font color=blue>Списки студентов МГИМО на получение льгот для проезда по г.Москве</font></h2>
+<h2><font color=blue>Списки студентов на получение льгот для проезда по г.Москве</font></h2>
 <hr>
 <a href=help.html><h4>Правила формирования CSV-файла (HELP)</h4></a>
 <hr>
@@ -68,7 +68,7 @@ if ( $_POST['add_apl'] ) { // нажата кнопка Закачать
   $body_xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 <tns:file xmlns:tns=\"http://university.sm.msr.com/schemas/incoming\">
 <fileInfo>
- <fileSender>186</fileSender>
+ <fileSender>$cod_uniera</fileSender>
  <version>1.1.3</version>
  <recordCount>" .
 
