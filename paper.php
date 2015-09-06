@@ -2,12 +2,12 @@
 
 error_reporting ( E_ERROR | E_WARNING | E_PARSE );
 
+$passw = "12345" ; // пароль для входа
+
 $dir1 = "/home/user/www/paper" ; // для упаковки
 $dir2 = "./" ; // для закачки
 $filename = "list_students" ; // без расширения
 $hierarchy = "hierarchy" ;  // файл шаблона иерархии одной записи студента
-
-$passw = "12345" ;
 
 ?>
 <html>
@@ -201,3 +201,4 @@ function pars_str ( $s ) { // парсинг строки
 }
 
 ?>
+ы
